@@ -19,8 +19,6 @@
 			} else {
 				message = "Please enter data first";
 			}
-
-			return message;
 		}
 		
 	}
