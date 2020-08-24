@@ -33,8 +33,7 @@
     <div class="col-md-6" ng-controller="ToBuyController as ToBuy">
      <h2>To Buy:</h2>
      <ul>
-       <li>Buy 10 cookies <button class="btn btn-default" ng-click="ToBuy.removeItem($index);"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
-       <li>Buy 10 cookies <button class="btn btn-default" ng-click="ToBuy.removeItem($index);"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
+       <li ng-repeat="item in ToBuy.ToBuyItems">Buy {{item.name}} {{item.quantity}} <button class="btn btn-default" ng-click="ToBuy.removeItem($index);"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
      </ul>
      <div class="emptyMessage">Everything is bought!</div>
     </div>
