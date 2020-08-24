@@ -16,7 +16,7 @@
     }
   }
   function AlreadyBoughtController(ShoppingListCheckOffService) {
-    
+    var AlreadyBought = this;
   }
 
   function ShoppingListCheckOffService() {
