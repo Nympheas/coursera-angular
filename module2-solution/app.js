@@ -12,7 +12,7 @@ function ToBuyController(ShoppingListCheckOffService) {
 
   ToBuy.items = ShoppingListCheckOffService.initToBuyList();
 
-  toBuy.bought = function (index) {
+  ToBuy.bought = function (index) {
     ShoppingListCheckOffService.toBoughtList(index);
     ShoppingListCheckOffService.dropBoughtItem(index);
   };
