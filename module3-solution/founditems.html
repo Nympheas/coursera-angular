@@ -1,0 +1,10 @@
+<br> <br><br><br>
+<ol class="desc">
+	<li ng-repeat="item in narrowItDown.items">
+		<b>Item Short Name: </b>{{ item.short_name  }} <br> 
+		<b>Item Name: </b>{{ item.name }} <br>
+		<b>Item Description: </b>{{ item.description }} <br>
+		<button class="btn btn-danger desc" ng-click="narrowItDown.onRemove({ id: $index});">Don't want this one</button>
+	</li>
+</ol>
+<div ng-if="narrowItDown.isEmpty()"> Nothing Found </div>
