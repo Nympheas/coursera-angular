@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    angular.module("NarrowDownChoice", [])
+    angular.module("NarrowItDownApp", [])
     .controller("NarrowItDownController", NarrowItDownController)
     .service("MenuSearchService", MenuSearchService)
     .directive("foundItems", FoundItems)
