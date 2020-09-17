@@ -28,7 +28,7 @@ function NarrowItDownController(MenuSearchService) {
 
   menu.searchTerm = '';
   menu.found = [];
-  menu.textImputLength = '';
+  menu.textInputLength = '';
 
   menu.getMenuItems = function() {
     if (!(menu.searchTerm)) {
@@ -39,7 +39,7 @@ function NarrowItDownController(MenuSearchService) {
     var promise = MenuSearchService.getMatchedMenuItems(menu.searchTerm);
     promise.then(function (response) {
       menu.found = response;
-      menu.textImputLength = menu.searchTerm;
+      menu.textInputLength = menu.searchTerm;
     })
     .catch(function (error) {
       console.log("Something went wrong.");
