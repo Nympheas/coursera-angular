@@ -1,0 +1,9 @@
+
+<ul>
+    <li ng-repeat="item in $ctrl.items" ui-sref="mainList.items({shortName: item.short_name})">
+      {{ item.short_name }} - {{ item.name }}
+    </li>
+  </ul>
+
+
+  <loading-spinner></loading-spinner>
